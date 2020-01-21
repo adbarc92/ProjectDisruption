@@ -4,5 +4,5 @@ An RPG game currently in development. Disruption seeks to bring a more tactical 
 
 ## Acknowledgements
 
-Benjamin Brown
-Emily Mansfield
+* **Benjamin Brown** - *Consulting*
+* **Emily Mansfield** - *Reference*
