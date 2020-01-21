@@ -1,0 +1,6 @@
+TO-DOS:
+
+1. Stats: Implement a generalized adjustment and fix function
+2. Stats: Individual statBlock calculation
+3. Specific tech bonuses to equipment
+4. Review makefile, create makefile
