@@ -2,10 +2,11 @@
 #include <vector>
 #include <string>
 #include "Unit.h"
+#include "Turn.h"
 
 class Team;
 class Technique;
-
+class Enemy;
 class Item;
 
 class Battle{
@@ -34,4 +35,5 @@ class Battle{
         std::vector<Character*> get_targets(bool friendly);
         void fix_xp();
         bool is_countering();
+        bool battle_ongoing();
 };

@@ -1,5 +1,9 @@
-
+#pragma once
 #include <math.h>
+
+#define DMG_MAX 999;
+#define HP_MAX 999;
+#define EX_MAX 99;
 
 struct core_stats
 {
@@ -42,4 +46,6 @@ public:
         stat_modifiers = stat_block(0, 0, 0, 0, 0);
         resist = resistances(_con, _str, _dex, _res, _agl);
     };
+    void fix_stats(); // Adjusts stats to account for modifiers and maxes
+    // Could include individual stat fixers for adjusting stats following status ailment expiration
 };

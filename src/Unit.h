@@ -6,11 +6,13 @@
 
 class Unit{
     private:
+        // Logistics
+        static int current_id;
         int id;
         std::string name;
-        static int current_id;
         Stats stat_set;
         std::pair<int,int> position;
+        Equipment equip_set;
     public:
         Unit();
 };

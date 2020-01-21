@@ -1,0 +1,4 @@
+Other Ideas
+    * Skill Trees (no ref) or Flexible Point Allocation (FFIX)
+        * Pure Investment unlocks "True" paths
+    * Characters stored in massive collection?

@@ -1,4 +1,4 @@
-=> : Includes, ~> : Inherits, *> : Variable
+=> : Includes, ~> : Inherits, *> : Variable. !> Clarification, ?> Questions
 
 Combat
     => Battle
@@ -7,10 +7,19 @@ Combat
             => Turn
         => Field: 3 rows by 
 
+Battle
+    *> turnPriority (fixer function, turn management)
+
 Stats
     => BaseStats
     => StatBlock
     => Resistances
+
+Equipment:
+    !> Types include: head, chest, hands, legs, feet
+    !> Slots: Weapon (1), Head (2), Chest (3), Hands (4), Legs (5)
+
+Device
 
 Unit
     *> ID
@@ -22,6 +31,15 @@ Unit
         *> Apotheosis Meter
         => Equipment
         ~> Enemy
+    ?> Would a battleprofile (including sprites, turnPriority, etc.) be helpful?
+
+Status
+    *> Duration
+    *> Stat Affected
+    *> Type (e.g. DOT, buff, nerf)
+    ?> Do statuses persist between encounters?
+    !> Includes: Sealed, Disrupted, Bleeding, Poison, Zombie/Atrophy/Decay
+
 
 Technique
     *> Damage Modifier
@@ -99,8 +117,3 @@ Turn (1 big action, 1 small action per turn)
         * Channel (IF: Lione | Sophia): continue technique from previous action at decreased power
         * Transform (IF: Chiranjivi)
 
-Other Ideas
-    * Skill Trees () or Flexible Point Allocation (FFIX)
-        * Pure Investment unlocks "True" paths
-    * Characters stored in massive collection?
-    * Graphics: 
