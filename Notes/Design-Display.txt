@@ -1,0 +1,31 @@
+What is shared by both Traversal and Combat?
+
+Stats: traversal triggers
+
+Display and game are technically distinct, but must be united by a "manager"
+
+The display is the sum of parts that reaches the player: input, visuals, 
+
+Display listens for inputs, which are routed to the controller/manager
+
+If using vertical menus, use an Input stack to determine which menus receive the inputs
+
+1. Display: Load assets, specify spritesheets, specify animations, load sounds
+
+2. After loading, provide screen--start with a window (for development), functions: draw (sprite, animation), play assets
+
+Animation templates (default, attacking, running, etc.)
+
+Actor (something with an animation or a sprite) => Character inherits (more detailed/numerous sprites)
+
+Every actor has a spritebase, which corresponds to a sprite which has been loaded (part of its constructor); also has animation state ("idle", "walking", "attacking", "rummaging", "surprised", "taking damage")
+
+Actor (setAnimation): takes a state as a string, combines it with its spritebase, e.g. "Sophia_attacking"; if animation is found, the Actor sets it as state; otherwise, print to console and set default
+
+Actor has position (X,Y), spritebase (string), animationState (string);
+    Functions: draw, update, setPosition
+
+Structure: Game (loop), Display (loads everything, input, drawing), Actor(drawable)
+
+Sprite Object has source image name, offset, dimensions
+
