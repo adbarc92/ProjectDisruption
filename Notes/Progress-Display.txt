@@ -1,0 +1,6 @@
+1. Get a window open.
+2. Load a picture and draw it.
+3. Load a sprite sheet, and draw individual sprites.
+4. Draw an animation.
+5. Associate an animation with an actor class; draw the actor (set sprite base)
+6. Set up game class with combat manager, 
